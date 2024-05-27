@@ -9,6 +9,15 @@ int main() {
 	int tries = 0;
 	do {
 		std::cout << "Enter number: ";
+		if(guess > randomNum) { 
+			std::cout << "The number is smaller!\n";
+		}
+		else if(guess < randomNum){
+			std::cout << "The number is larger\n";
+		}
+		else {
+			break;
+		}
 		std::cin >> guess;
 		tries++;
 	}
