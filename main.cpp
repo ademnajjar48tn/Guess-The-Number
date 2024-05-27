@@ -9,6 +9,7 @@ int main() {
 	int tries = 0;
 	do {
 		std::cout << "Enter number: ";
+		std::cin >> guess;
 		if(guess > randomNum) { 
 			std::cout << "The number is smaller!\n";
 		}
@@ -18,7 +19,6 @@ int main() {
 		else {
 			break;
 		}
-		std::cin >> guess;
 		tries++;
 	}
 	while(guess!= randomNum);
